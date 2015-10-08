@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>qml/MenuIconLive.qml</file>
+        <file>qml/MainMenu.qml</file>
+        <file>qml/MyPage.qml</file>
+        <file>qml/PageExample.qml</file>
+    </qresource>
+</RCC>
