@@ -1,10 +1,7 @@
 import QtQuick 2.4
 import QtQuick.Window 2.2
-import QtQuick.Dialogs 1.2
 import Qt.labs.settings 1.0
 import QtQuick.Controls 1.2
-import QtQuick.XmlListModel 2.0
-import QtMultimedia 5.4
 
 import mydevice 1.0
 
@@ -54,7 +51,7 @@ ApplicationWindow {
         id: settings
     }
 
-    property string version: "2015100401"
+    property string version: "2015100901"
 
     property alias currentPage: loader.source
 
@@ -88,7 +85,7 @@ ApplicationWindow {
                 anchors.verticalCenter: parent.verticalCenter
                 width: 1.2*height
                 height: parent.height
-                scale: ma_.pressed ? 1.2 : 1
+                scale: maMenuBar.pressed ? 1.2 : 1
                 color: "transparent"
                 MenuIconLive {
                     id: menuBackIcon
@@ -97,7 +94,7 @@ ApplicationWindow {
                     value: menuProgressOpening
                 }
                 MouseArea {
-                    id: ma_
+                    id: maMenuBar
                     anchors.fill: parent
                     onClicked: onMenu()
                 }
@@ -223,14 +220,12 @@ ApplicationWindow {
         }
     }
 
-
     function onMenu() {
         menuView.x = app.menuIsShown ? -menuWidth : 0
     }
 
-
     Component.onCompleted: {
         currentPage = "PageExample.qml"
-        mainMenu.currentItem = 4
+        mainMenu.currentItem = 0
     }
 }

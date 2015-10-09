@@ -8,9 +8,7 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    //qmlRegisterType<MyAdmob>("myadmob", 1, 0, "MyAdmob");
     qmlRegisterType<MyDevice>("mydevice", 1, 0, "MyDevice");
-
 
     QQmlApplicationEngine engine;
     engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));

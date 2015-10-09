@@ -5,5 +5,7 @@
         <file>qml/MainMenu.qml</file>
         <file>qml/MyPage.qml</file>
         <file>qml/PageExample.qml</file>
+        <file>qml/PageAbout.qml</file>
+        <file>qml/PageSettings.qml</file>
     </qresource>
 </RCC>
