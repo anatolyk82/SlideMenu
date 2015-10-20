@@ -114,7 +114,7 @@ ApplicationWindow {
             anchors.top: menuBar.bottom
             anchors.left: parent.left
             anchors.right: parent.right
-            height: 10*app.dp
+            height: 6*app.dp
             z: 4
             source: "qrc:/images/shadow_title.png"
         }
@@ -171,7 +171,7 @@ ApplicationWindow {
             anchors.top: menuBar.bottom
             anchors.bottom: menuView.bottom
             anchors.left: menuView.right
-            width: 10*app.dp
+            width: 6*app.dp
             z: 5
             source: "qrc:/images/shadow_long.png"
             visible: menuView.x != -menuWidth

@@ -25,11 +25,6 @@ Item {
             icon: "qrc:/images/icon_info.png"
             page: "PageAbout.qml"
         }
-        /*ListElement {
-            item: "log"
-            icon: ""
-            page: "PageLog.qml"
-        }*/
     }
 
     function textItemMenu( item )
@@ -61,7 +56,7 @@ Item {
         height: width*0.5
         color: palette.primary //"#3078fe" //this color is equal to the background of imgLogo
         clip: true
-        /*Image {
+        Image {
             id: imgLogo
             source: "qrc:/images/background.jpg"
             height: parent.height
@@ -70,9 +65,8 @@ Item {
             smooth: true
             anchors.top: parent.top
             anchors.left: parent.left
-            //anchors.leftMargin: (app._progressOpening-1)*60*app.dp
             opacity: 0.5
-        }*/
+        }
     }
     Image {
         id: imgShadow
