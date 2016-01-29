@@ -1,4 +1,4 @@
 # SlideMenu
 
 
-http://qtcoding.blogspot.ru/2015/10/slide-menu.html
+http://qtcoding.blogspot.com/2015/10/implementation-of-slide-menu-in-qml.html
